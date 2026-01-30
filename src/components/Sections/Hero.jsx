@@ -1,0 +1,80 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import heroVideo from '../../assets/Hero3.mp4';
+
+const Hero = ({ onFollowClick, onLearnMoreClick }) => {
+    return (
+        <section id="home" className="relative h-screen w-full flex items-center px-8 md:px-24 overflow-hidden">
+            {/* Background Video/Image */}
+            <div className="absolute inset-0 z-0">
+                <div className="absolute inset-0 bg-black/60 z-10" />
+                <video
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="w-full h-full object-cover grayscale opacity-85"
+                >
+                    <source src={heroVideo} type="video/mp4" />
+                </video>
+            </div>
+
+            {/* Content */}
+            <div className="relative z-20 max-w-4xl">
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, ease: "easeOut" }}
+                    viewport={{ once: true }}
+                >
+                    <h1 className="text-5xl md:text-8xl leading-tight mb-8">
+                        Transformamos <br />
+                        <span className="text-white/80">Complejidad</span> en <br />
+                        Rendimiento <span className="text-purple-vibrant">Real.</span>
+                    </h1>
+
+                    <p className="font-mono text-sm md:text-base text-white/60 max-w-xl leading-relaxed mb-12">
+                        Diseñamos y operamos soluciones avanzadas en IA y ciberseguridad,
+                        ayudando a organizaciones a pasar de la incertidumbre a la ejecución
+                        real con impacto y escalabilidad.
+                    </p>
+
+                    <div className="flex flex-wrap gap-6">
+                        <motion.button
+                            onClick={onFollowClick}
+                            whileHover={{
+                                scale: 1.05,
+                                boxShadow: "0 0 30px rgba(123, 97, 255, 0.5)",
+                                backgroundColor: "#8B73FF"
+                            }}
+                            className="bg-purple-vibrant px-12 py-5 rounded-tr-3xl rounded-bl-3xl font-mono text-sm tracking-widest uppercase transition-colors"
+                        >
+                            Síguenos!
+                        </motion.button>
+                        <motion.button
+                            onClick={onLearnMoreClick}
+                            whileHover={{
+                                scale: 1.05,
+                                backgroundColor: "rgba(255,255,255,0.1)",
+                                borderColor: "rgba(123, 97, 255, 0.5)",
+                                boxShadow: "0 0 20px rgba(123, 97, 255, 0.2)"
+                            }}
+                            className="border border-white/20 px-12 py-5 rounded-tr-3xl rounded-bl-3xl font-mono text-sm tracking-widest uppercase bg-transparent transition-all"
+                        >
+                            Saber más
+                        </motion.button>
+                    </div>
+                </motion.div>
+            </div>
+
+            {/* Side Decorative Text (Vertical) */}
+            <div className="absolute right-12 bottom-24 hidden lg:block rotate-90 origin-right">
+                <span className="font-mono text-[12px] text-white/50 tracking-[1em] uppercase">
+                    Innovation • Performance • Security
+                </span>
+            </div>
+        </section>
+    );
+};
+
+export default Hero;

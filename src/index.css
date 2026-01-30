@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&family=JetBrains+Mono:wght@300;400;500&display=swap');
+
+@config "../tailwind.config.js";
+
+@layer base {
+
+  *,
+  ::after,
+  ::before {
+    @apply border-white/10;
+  }
+
+  body {
+    @apply bg-black text-white antialiased overflow-x-hidden;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-sans font-extralight tracking-tight;
+  }
+
+  code,
+  pre,
+  .font-mono {
+    @apply font-mono font-light;
+  }
+}
+
+/* Custom Utilities */
+.text-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+/* The Frame */
+.the-frame {
+  @apply fixed inset-0 pointer-events-none z-[100] border border-white/10;
+  margin: 12px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff20;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff40;
+}
+
+/* Smooth Scroll container */
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
