@@ -4,7 +4,7 @@ import heroVideo from '../../assets/Hero3.mp4';
 
 const Hero = ({ onFollowClick, onLearnMoreClick }) => {
     return (
-        <section id="home" className="relative h-screen w-full flex items-center px-8 md:px-24 overflow-hidden">
+        <section id="home" className="relative min-h-[100svh] w-full flex items-center px-8 md:px-24 pt-32 pb-16 md:py-0 overflow-hidden">
             {/* Background Video/Image */}
             <div className="absolute inset-0 z-0">
                 <div className="absolute inset-0 bg-black/60 z-10" />
@@ -27,13 +27,13 @@ const Hero = ({ onFollowClick, onLearnMoreClick }) => {
                     transition={{ duration: 1, ease: "easeOut" }}
                     viewport={{ once: true }}
                 >
-                    <h1 className="text-5xl md:text-8xl leading-tight mb-8">
+                    <h1 className="text-3xl md:text-8xl leading-tight mb-8">
                         Transformamos <br />
                         <span className="text-white/80">Complejidad</span> en <br />
                         Rendimiento <span className="text-purple-vibrant">Real.</span>
                     </h1>
 
-                    <p className="font-mono text-sm md:text-base text-white/60 max-w-xl leading-relaxed mb-12">
+                    <p className="font-mono text-sm md:text-base text-white/80 max-w-xl leading-relaxed mb-12">
                         Diseñamos y operamos soluciones avanzadas en IA y ciberseguridad,
                         ayudando a organizaciones a pasar de la incertidumbre a la ejecución
                         real con impacto y escalabilidad.

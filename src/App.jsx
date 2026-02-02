@@ -10,16 +10,17 @@ import WhyItierx from './components/Sections/WhyItierx';
 import WhoWeAre from './components/Sections/WhoWeAre';
 import Contact from './components/Sections/Contact';
 import ContactModal from './components/UI/ContactModal';
+import ServiceModal from './components/UI/ServiceModal';
 import SocialModal from './components/UI/SocialModal';
 import PortfolioModal from './components/UI/PortfolioModal';
 
 function App() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [contactData, setContactData] = useState({ isOpen: false, category: '' });
+  const [selectedService, setSelectedService] = useState(null);
   const [isSocialModalOpen, setIsSocialModalOpen] = useState(false);
   const [isPortfolioModalOpen, setIsPortfolioModalOpen] = useState(false);
 
   useEffect(() => {
-    // ... same lenis code ...
     const lenis = new Lenis({
       duration: 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
@@ -44,11 +45,16 @@ function App() {
     };
   }, []);
 
+  const handleInterestClick = (service) => {
+    setSelectedService(null);
+    setContactData({ isOpen: true, category: service.shortTitle });
+  };
+
   return (
     <div className="relative min-h-screen bg-black text-white font-sans selection:bg-purple-vibrant/30">
       <Frame />
       <Sidebar />
-      <Navbar onContactClick={() => setIsModalOpen(true)} />
+      <Navbar onContactClick={() => setContactData({ isOpen: true, category: '' })} />
 
       <main className="pl-0 md:pl-20">
         <Hero
@@ -57,14 +63,35 @@ function App() {
         />
         <LogoCarousel />
         <WhyItierx />
-        <WhoWeAre />
-        <Contact onContactClick={() => setIsModalOpen(true)} />
-        {/* Additional sections can go here */}
+        <WhoWeAre onServiceClick={(service) => setSelectedService(service)} />
+        <Contact onContactClick={() => setContactData({ isOpen: true, category: '' })} />
       </main>
 
-      <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
-      <SocialModal isOpen={isSocialModalOpen} onClose={() => setIsSocialModalOpen(false)} />
-      <PortfolioModal isOpen={isPortfolioModalOpen} onClose={() => setIsPortfolioModalOpen(false)} />
+      <AnimatePresence>
+        {selectedService && (
+          <ServiceModal
+            key="service-modal"
+            isOpen={true}
+            service={selectedService}
+            onClose={() => setSelectedService(null)}
+            onInterestClick={handleInterestClick}
+          />
+        )}
+        {contactData.isOpen && (
+          <ContactModal
+            key="contact-modal"
+            isOpen={true}
+            category={contactData.category}
+            onClose={() => setContactData({ ...contactData, isOpen: false })}
+          />
+        )}
+        {isSocialModalOpen && (
+          <SocialModal key="social-modal" isOpen={true} onClose={() => setIsSocialModalOpen(false)} />
+        )}
+        {isPortfolioModalOpen && (
+          <PortfolioModal key="portfolio-modal" isOpen={true} onClose={() => setIsPortfolioModalOpen(false)} />
+        )}
+      </AnimatePresence>
 
       {/* Background elements or noise overlay could go here */}
     </div>

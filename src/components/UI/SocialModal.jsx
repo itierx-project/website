@@ -45,6 +45,8 @@ const SocialModal = ({ isOpen, onClose }) => {
                                 <motion.a
                                     key={name}
                                     href={url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     initial={{ opacity: 0, y: 10 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: i * 0.1 }}

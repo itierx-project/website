@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Twitter, Linkedin, Youtube, Instagram } from 'lucide-react';
+import { Twitter, Linkedin, Youtube, Instagram, Facebook } from 'lucide-react';
 
 const Contact = ({ onContactClick }) => {
     return (
@@ -59,9 +59,9 @@ const Contact = ({ onContactClick }) => {
                         <div className="flex gap-6">
                             {[
                                 { Icon: Twitter, url: '#' },
-                                { Icon: Linkedin, url: '#' },
-                                { Icon: Youtube, url: '#' },
-                                { Icon: Instagram, url: 'https://www.instagram.com/jruz_z/' }
+                                { Icon: Linkedin, url: 'https://www.linkedin.com/company/itierx/' },
+                                { Icon: Facebook, url: 'https://www.facebook.com/profile.php?id=61587183754766' },
+                                { Icon: Instagram, url: 'https://www.instagram.com/itierxspa/' }
                             ].map(({ Icon, url }, i) => (
                                 <a key={i} href={url} target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-purple-vibrant transition-colors">
                                     <Icon size={18} />
@@ -69,14 +69,14 @@ const Contact = ({ onContactClick }) => {
                             ))}
                         </div>
                         <div className="text-[14px] font-mono text-white/60 mt-4">
-                            Technology. Tiered. Limitless. / Itier<span className="text-purple-vibrant">X</span>
+                            technology. tiered. limitless / Itier<span className="text-purple-vibrant">X</span>
                         </div>
                     </div>
 
                     <div className="flex flex-col items-end gap-2">
                         <div className="flex items-center gap-2">
                             <div className="w-2 h-2 rounded-full bg-purple-vibrant shadow-[0_0_10px_rgba(123,97,255,1)]" />
-                            <span className="font-mono text-[12px] text-white/60 uppercase tracking-widest">
+                            <span className="font-mono text-[13px] text-white/60 uppercase tracking-widest">
                                 COPYRIGHT © 2026 ITierX.com
                             </span>
                         </div>

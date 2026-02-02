@@ -29,7 +29,7 @@ const PortfolioModal = ({ isOpen, onClose }) => {
     return (
         <AnimatePresence>
             {isOpen && (
-                <div className="fixed inset-0 z-[200] flex items-center justify-center p-4 md:p-12">
+                <div className="fixed inset-0 z-[300] flex items-center justify-center p-4 md:p-12">
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
@@ -42,7 +42,7 @@ const PortfolioModal = ({ isOpen, onClose }) => {
                         initial={{ scale: 0.95, opacity: 0 }}
                         animate={{ scale: 1, opacity: 1 }}
                         exit={{ scale: 0.95, opacity: 0 }}
-                        className="relative w-full max-w-5xl aspect-video md:aspect-[21/9] bg-black border border-white/10 rounded-tr-3xl rounded-bl-3xl overflow-hidden flex flex-col"
+                        className="relative w-full max-w-5xl min-h-[80vh] md:aspect-[21/9] bg-black border border-white/10 rounded-tr-3xl rounded-bl-3xl overflow-y-auto md:overflow-hidden flex flex-col"
                     >
                         {/* Header */}
                         <div className="flex items-center justify-between p-8 border-b border-white/5">

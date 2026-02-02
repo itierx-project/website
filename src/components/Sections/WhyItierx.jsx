@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const WhyItierx = () => {
     return (
-        <section id="metodologia" className="relative min-h-screen py-32 px-8 md:px-24 bg-black overflow-hidden">
+        <section id="metodologia" className="relative min-h-screen pt-32 pb-12 md:py-32 px-8 md:px-24 bg-black overflow-hidden">
             <div className="max-w-7xl mx-auto flex flex-col items-center">
                 <motion.div
                     initial={{ opacity: 0, y: 40 }}
@@ -51,7 +51,7 @@ const WhyItierx = () => {
 
                     <div className="absolute bottom-12 left-12 z-20">
                         <h3 className="text-2xl font-sans mb-2">Metodología de Impacto</h3>
-                        <p className="font-mono text-xs text-white/60 uppercase tracking-widest">
+                        <p className="font-mono text-xs text-white/80 uppercase tracking-widest">
                             Sistemas que deben funcionar.
                         </p>
                     </div>

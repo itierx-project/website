@@ -19,7 +19,7 @@ const LogoCarousel = () => {
                 <motion.p
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
-                    className="font-mono text-[15px] text-white/60 tracking-wider"
+                    className="font-mono text-[15px] text-white/80 tracking-wider"
                 >
                     Nuestras soluciones han sido implementadas en organizaciones de liderazgo global:
                 </motion.p>
