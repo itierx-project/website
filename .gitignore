@@ -24,3 +24,5 @@ dist-ssr
 *.sw?
 Dockerfile
 .dockerignore
+nginx.conf
+.gitignore
