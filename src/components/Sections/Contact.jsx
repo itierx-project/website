@@ -50,7 +50,7 @@ const Contact = ({ onContactClick }) => {
                     <div className="flex flex-col gap-2">
                         <span className="font-mono text-[13px] text-white/60 uppercase tracking-widest">No dudes en contactarnos:</span>
                         <a href="mailto:contacto@itierx.com" className="font-mono text-[15px] hover:text-purple-vibrant transition-colors">
-                            contacto@itierx.com
+                            contacto@itierx.com - itierx@itierx.com
                         </a>
                     </div>
 
