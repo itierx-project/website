@@ -4,7 +4,7 @@ import heroVideo from '../../assets/Hero3.mp4';
 
 const Hero = ({ onFollowClick, onLearnMoreClick }) => {
     return (
-        <section id="home" className="relative min-h-[100svh] w-full flex items-center px-8 md:px-24 pt-40 pb-16 md:pt-48 md:pb-24 overflow-hidden">
+        <section id="home" className="relative min-h-screen w-full flex flex-col justify-center px-8 md:px-24 pt-28 pb-12 overflow-hidden">
             {/* Background Video/Image */}
             <div className="absolute inset-0 z-0">
                 <div className="absolute inset-0 bg-black/50 z-10" />
@@ -20,26 +20,26 @@ const Hero = ({ onFollowClick, onLearnMoreClick }) => {
             </div>
 
             {/* Content */}
-            <div className="relative z-20 max-w-4xl">
+            <div className="relative z-20 max-w-5xl">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, ease: "easeOut" }}
                     viewport={{ once: true }}
                 >
-                    <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl leading-[1.1] md:leading-[1.1] mb-8">
+                    <h1 className="text-[clamp(2rem,7vh+1vw,4.5rem)] md:text-[clamp(3.5rem,8vh+2vw,6.5rem)] leading-[1.05] md:leading-[1.05] mb-4 md:mb-6 font-bold tracking-tight">
                         Transformamos <br />
                         <span className="text-white/80">Complejidad</span> en <br />
                         Rendimiento <span className="text-purple-vibrant">Real.</span>
                     </h1>
 
-                    <p className="font-mono text-sm md:text-base text-white/80 max-w-xl leading-relaxed mb-12">
+                    <p className="font-mono text-xs sm:text-sm md:text-base text-white/80 max-w-2xl leading-relaxed mb-8 md:mb-10">
                         Diseñamos y operamos soluciones avanzadas en IA y ciberseguridad,
                         ayudando a organizaciones a pasar de la incertidumbre a la ejecución
                         real con impacto y escalabilidad.
                     </p>
 
-                    <div className="flex flex-wrap gap-6">
+                    <div className="flex flex-wrap gap-4 md:gap-6">
                         <motion.button
                             onClick={onFollowClick}
                             whileHover={{
@@ -47,7 +47,7 @@ const Hero = ({ onFollowClick, onLearnMoreClick }) => {
                                 boxShadow: "0 0 30px rgba(123, 97, 255, 0.5)",
                                 backgroundColor: "#8B73FF"
                             }}
-                            className="bg-purple-vibrant px-12 py-5 rounded-tr-3xl rounded-bl-3xl font-mono text-sm tracking-widest uppercase transition-colors"
+                            className="bg-purple-vibrant px-8 md:px-12 py-4 md:py-5 rounded-tr-3xl rounded-bl-3xl font-mono text-xs md:text-sm tracking-widest uppercase transition-colors"
                         >
                             Síguenos!
                         </motion.button>
@@ -59,7 +59,7 @@ const Hero = ({ onFollowClick, onLearnMoreClick }) => {
                                 borderColor: "rgba(123, 97, 255, 0.5)",
                                 boxShadow: "0 0 20px rgba(123, 97, 255, 0.2)"
                             }}
-                            className="border border-white/20 px-12 py-5 rounded-tr-3xl rounded-bl-3xl font-mono text-sm tracking-widest uppercase bg-transparent transition-all"
+                            className="border border-white/20 px-8 md:px-12 py-4 md:py-5 rounded-tr-3xl rounded-bl-3xl font-mono text-xs md:text-sm tracking-widest uppercase bg-transparent transition-all"
                         >
                             Saber más
                         </motion.button>
