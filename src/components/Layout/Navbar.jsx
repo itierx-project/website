@@ -12,7 +12,7 @@ const Navbar = ({ onContactClick }) => {
                 initial={{ y: -100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-                className="fixed top-0 left-0 right-0 h-24 flex items-center justify-between px-8 md:px-12 md:pl-32 z-[60] bg-gradient-to-b from-black/95 via-black/80 to-transparent backdrop-blur-md lg:backdrop-blur-sm"
+                className="fixed top-0 left-0 right-0 h-24 flex items-center justify-between px-8 md:px-12 md:pl-32 z-[60] bg-gradient-to-b from-black via-black/90 to-transparent backdrop-blur-md"
             >
                 <div className="flex items-center gap-12">
                     <div className="flex items-center gap-2">

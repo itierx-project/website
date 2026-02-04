@@ -4,7 +4,7 @@ import heroVideo from '../../assets/Hero3.mp4';
 
 const Hero = ({ onFollowClick, onLearnMoreClick }) => {
     return (
-        <section id="home" className="relative min-h-[100svh] w-full flex items-center px-8 md:px-24 pt-32 pb-16 md:py-0 overflow-hidden">
+        <section id="home" className="relative min-h-[100svh] w-full flex items-center px-8 md:px-24 pt-40 pb-16 md:pt-48 md:pb-24 overflow-hidden">
             {/* Background Video/Image */}
             <div className="absolute inset-0 z-0">
                 <div className="absolute inset-0 bg-black/50 z-10" />
@@ -27,7 +27,7 @@ const Hero = ({ onFollowClick, onLearnMoreClick }) => {
                     transition={{ duration: 1, ease: "easeOut" }}
                     viewport={{ once: true }}
                 >
-                    <h1 className="text-4xl md:text-7xl lg:text-7xl xl:text-8xl leading-none md:leading-tight mb-8">
+                    <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl leading-[1.1] md:leading-[1.1] mb-8">
                         Transformamos <br />
                         <span className="text-white/80">Complejidad</span> en <br />
                         Rendimiento <span className="text-purple-vibrant">Real.</span>
