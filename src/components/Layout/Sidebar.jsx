@@ -32,7 +32,7 @@ const Sidebar = () => {
                         />
                     ))}
                 </div>
-                <span className="text-[9px] font-mono text-white/20 tracking-widest transform -rotate-90 origin-center whitespace-nowrap mb-6">
+                <span className="text-[9px] font-mono text-white/60 tracking-widest transform -rotate-90 origin-center whitespace-nowrap mb-6">
                     itierx.com
                 </span>
             </div>

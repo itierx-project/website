@@ -7,7 +7,7 @@ const Hero = ({ onFollowClick, onLearnMoreClick }) => {
         <section id="home" className="relative min-h-[100svh] w-full flex items-center px-8 md:px-24 pt-32 pb-16 md:py-0 overflow-hidden">
             {/* Background Video/Image */}
             <div className="absolute inset-0 z-0">
-                <div className="absolute inset-0 bg-black/60 z-10" />
+                <div className="absolute inset-0 bg-black/50 z-10" />
                 <video
                     autoPlay
                     muted
@@ -69,7 +69,7 @@ const Hero = ({ onFollowClick, onLearnMoreClick }) => {
 
             {/* Side Decorative Text (Vertical) */}
             <div className="absolute right-12 bottom-24 hidden lg:block rotate-90 origin-right">
-                <span className="font-mono text-[12px] text-white/50 tracking-[1em] uppercase">
+                <span className="font-mono text-[12px] text-white/60 tracking-[1em] uppercase">
                     Innovation • Performance • Security
                 </span>
             </div>

@@ -69,7 +69,7 @@ const WhoWeAre = ({ onServiceClick }) => {
                     viewport={{ once: true }}
                     className="mb-24"
                 >
-                    <h2 className="text-5xl md:text-8xl mb-8">No vendemos <br /><span className="text-white/60">software genérico.</span></h2>
+                    <h2 className="text-5xl md:text-8xl mb-8">No vendemos <br /><span className="text-white/70">software genérico.</span></h2>
                     <div className="w-24 h-1 bg-purple-vibrant" />
                 </motion.div>
 
@@ -86,7 +86,7 @@ const WhoWeAre = ({ onServiceClick }) => {
                         >
                             <span className="font-mono text-[10px] text-white/80 uppercase tracking-[0.3em] mb-4 block">
                                 0{index + 1}
-                            </span>8
+                            </span>
                             <h3 className="text-2xl md:text-3xl mb-4 group-hover:text-purple-vibrant transition-colors duration-500">
                                 {service.shortTitle}
                                 <span className="text-purple-vibrant text-[1.8em] group-hover:opacity-100 opacity-80 transition-opacity duration-500">
