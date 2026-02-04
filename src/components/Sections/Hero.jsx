@@ -27,9 +27,9 @@ const Hero = ({ onFollowClick, onLearnMoreClick }) => {
                     transition={{ duration: 1, ease: "easeOut" }}
                     viewport={{ once: true }}
                 >
-                    <h1 className="text-[clamp(2rem,7vh+1vw,4.5rem)] md:text-[clamp(3.5rem,8vh+2vw,6.5rem)] leading-[1.05] md:leading-[1.05] mb-4 md:mb-6 font-bold tracking-tight">
+                    <h1 className="text-[clamp(2rem,7vh+1vw,4.5rem)] md:text-[clamp(3.5rem,8vh+2vw,6.5rem)] leading-[1.05] md:leading-[1.05] mb-4 md:mb-6">
                         Transformamos <br />
-                        <span className="text-white/80">Complejidad</span> en <br />
+                        <span className="text-white/70">Complejidad</span> en <br />
                         Rendimiento <span className="text-purple-vibrant">Real.</span>
                     </h1>
 
