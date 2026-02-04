@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Twitter, Linkedin, Youtube, Instagram, Facebook } from 'lucide-react';
+import { Linkedin, Youtube, Instagram, Facebook } from 'lucide-react';
 
 const Contact = ({ onContactClick }) => {
     return (

@@ -13,6 +13,7 @@ import ContactModal from './components/UI/ContactModal';
 import ServiceModal from './components/UI/ServiceModal';
 import SocialModal from './components/UI/SocialModal';
 import PortfolioModal from './components/UI/PortfolioModal';
+import WhatsAppButton from './components/UI/WhatsAppButton';
 
 function App() {
   const [contactData, setContactData] = useState({ isOpen: false, category: '' });
@@ -93,6 +94,7 @@ function App() {
         )}
       </AnimatePresence>
 
+      <WhatsAppButton />
       {/* Background elements or noise overlay could go here */}
     </div>
   );

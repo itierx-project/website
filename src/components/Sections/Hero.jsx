@@ -27,7 +27,7 @@ const Hero = ({ onFollowClick, onLearnMoreClick }) => {
                     transition={{ duration: 1, ease: "easeOut" }}
                     viewport={{ once: true }}
                 >
-                    <h1 className="text-3xl md:text-8xl leading-tight mb-8">
+                    <h1 className="text-4xl md:text-7xl lg:text-7xl xl:text-8xl leading-none md:leading-tight mb-8">
                         Transformamos <br />
                         <span className="text-white/80">Complejidad</span> en <br />
                         Rendimiento <span className="text-purple-vibrant">Real.</span>
