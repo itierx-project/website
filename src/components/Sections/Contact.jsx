@@ -51,8 +51,7 @@ const Contact = ({ onContactClick }) => {
                         <span className="font-mono text-[13px] text-white/60 uppercase tracking-widest">No dudes en contactarnos:</span>
                         <a href="mailto:contacto@itierx.com" className="font-mono text-[15px] hover:text-purple-vibrant transition-colors">
                             Contacto@itierx.com
-                            <br />
-                            Itierx@itierx.com
+
                         </a>
                     </div>
 
