@@ -70,7 +70,7 @@ const Hero = ({ onFollowClick, onLearnMoreClick }) => {
             {/* Side Decorative Text (Vertical) */}
             <div className="absolute right-12 bottom-24 hidden lg:block rotate-90 origin-right">
                 <span className="font-mono text-[10px] text-white/70 tracking-[1em] uppercase">
-                    Innovation • Performance • Security
+                    Tech • Performance • Security
                 </span>
             </div>
         </section>
