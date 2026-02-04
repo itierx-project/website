@@ -56,7 +56,7 @@ const Contact = ({ onContactClick }) => {
                     </div>
 
                     <div className="flex flex-col items-center gap-6">
-                        <span className="font-mono text-[13px] text-white/60 uppercase tracking-widest">Follow Us</span>
+                        <span className="font-mono text-[13px] text-white/60 uppercase tracking-widest">Síguenos</span>
                         <div className="flex gap-6">
                             {[
                                 { Icon: Linkedin, url: 'https://www.linkedin.com/company/itierx/' },

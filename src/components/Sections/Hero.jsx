@@ -27,7 +27,7 @@ const Hero = ({ onFollowClick, onLearnMoreClick }) => {
                     transition={{ duration: 1, ease: "easeOut" }}
                     viewport={{ once: true }}
                 >
-                    <h1 className="text-[clamp(2rem,7vh+1vw,4.5rem)] md:text-[clamp(3.5rem,8vh+2vw,6.5rem)] leading-[1.05] md:leading-[1.05] mb-4 md:mb-6">
+                    <h1 className="text-[clamp(1.8rem,10vw,3.2rem)] md:text-[clamp(3.5rem,8vh+2vw,6.5rem)] leading-[1.1] md:leading-[1.05] mb-4 md:mb-6">
                         Transformamos <br />
                         <span className="text-white/80">Complejidad</span> en <br />
                         Rendimiento <span className="text-purple-vibrant">Real.</span>
@@ -69,8 +69,8 @@ const Hero = ({ onFollowClick, onLearnMoreClick }) => {
 
             {/* Side Decorative Text (Vertical) */}
             <div className="absolute right-12 bottom-24 hidden lg:block rotate-90 origin-right">
-                <span className="font-mono text-[10px] text-white/70 tracking-[1em] uppercase">
-                    Tech • Performance • Security
+                <span className="font-mono text-[9px] text-white/70 tracking-[1em] uppercase">
+                    Technology • Performance • Security
                 </span>
             </div>
         </section>
