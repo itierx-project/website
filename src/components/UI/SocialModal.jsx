@@ -1,13 +1,12 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Twitter, Linkedin, Youtube, Instagram } from 'lucide-react';
+import { X, Twitter, Linkedin, Youtube, Instagram, Facebook } from 'lucide-react';
 
 const SocialModal = ({ isOpen, onClose }) => {
     const socials = [
-        { name: 'Twitter', Icon: Twitter, url: '#' },
-        { name: 'LinkedIn', Icon: Linkedin, url: '#' },
-        { name: 'YouTube', Icon: Youtube, url: '#' },
-        { name: 'Instagram', Icon: Instagram, url: 'https://www.instagram.com/jruz_z/' },
+        { name: 'LinkedIn', Icon: Linkedin, url: 'https://www.linkedin.com/company/itierx/' },
+        { name: 'Facebook', Icon: Facebook, url: 'https://www.facebook.com/profile.php?id=61587183754766' },
+        { name: 'Instagram', Icon: Instagram, url: 'https://www.instagram.com/itierxspa/' },
     ];
 
     return (

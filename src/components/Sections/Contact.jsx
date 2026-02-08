@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Twitter, Linkedin, Youtube, Instagram, Facebook } from 'lucide-react';
+import { Linkedin, Youtube, Instagram, Facebook } from 'lucide-react';
 
 const Contact = ({ onContactClick }) => {
     return (
@@ -26,9 +26,9 @@ const Contact = ({ onContactClick }) => {
                 >
                     <h2 className="text-5xl md:text-8xl font-sans font-extralight tracking-tight mb-6">
                         ¿Listo para Transformar <br />
-                        <span className="text-white/60">tu Infraestructura?</span>
+                        <span className="text-white/70">tu Infraestructura?</span>
                     </h2>
-                    <p className="font-mono text-sm md:text-base text-white/60 tracking-widest uppercase mb-12">
+                    <p className="font-mono text-sm md:text-base text-white/75 tracking-widest uppercase mb-12">
                         Diseñamos soluciones que escalan con tu visión.
                     </p>
 
@@ -50,15 +50,15 @@ const Contact = ({ onContactClick }) => {
                     <div className="flex flex-col gap-2">
                         <span className="font-mono text-[13px] text-white/60 uppercase tracking-widest">No dudes en contactarnos:</span>
                         <a href="mailto:contacto@itierx.com" className="font-mono text-[15px] hover:text-purple-vibrant transition-colors">
-                            contacto@itierx.com - itierx@itierx.com
+                            Contacto@itierx.com
+
                         </a>
                     </div>
 
                     <div className="flex flex-col items-center gap-6">
-                        <span className="font-mono text-[13px] text-white/60 uppercase tracking-widest">Follow Us</span>
+                        <span className="font-mono text-[13px] text-white/60 uppercase tracking-widest">Síguenos</span>
                         <div className="flex gap-6">
                             {[
-                                { Icon: Twitter, url: '#' },
                                 { Icon: Linkedin, url: 'https://www.linkedin.com/company/itierx/' },
                                 { Icon: Facebook, url: 'https://www.facebook.com/profile.php?id=61587183754766' },
                                 { Icon: Instagram, url: 'https://www.instagram.com/itierxspa/' }
@@ -68,7 +68,7 @@ const Contact = ({ onContactClick }) => {
                                 </a>
                             ))}
                         </div>
-                        <div className="text-[14px] font-mono text-white/60 mt-4">
+                        <div className="text-[14px] font-mono text-white/80 mt-4">
                             technology. tiered. limitless / Itier<span className="text-purple-vibrant">X</span>
                         </div>
                     </div>
@@ -76,7 +76,7 @@ const Contact = ({ onContactClick }) => {
                     <div className="flex flex-col items-end gap-2">
                         <div className="flex items-center gap-2">
                             <div className="w-2 h-2 rounded-full bg-purple-vibrant shadow-[0_0_10px_rgba(123,97,255,1)]" />
-                            <span className="font-mono text-[13px] text-white/60 uppercase tracking-widest">
+                            <span className="font-mono text-[12px] text-white/60 uppercase tracking-widest">
                                 COPYRIGHT © 2026 ITierX.com
                             </span>
                         </div>

@@ -17,7 +17,7 @@ const Sidebar = () => {
 
             {/* Center: Vertical Rotated Text */}
             <div className="flex-1 flex items-center justify-center overflow-hidden">
-                <span className="text-[10px] tracking-[0.3em] uppercase text-white/60 whitespace-nowrap text-vertical transform rotate-180">
+                <span className="text-[10px] tracking-[0.3em] uppercase text-white/70 whitespace-nowrap text-vertical transform rotate-180">
                     Sistemas Críticos • IA Aplicada • Ciberseguridad
                 </span>
             </div>
@@ -32,7 +32,7 @@ const Sidebar = () => {
                         />
                     ))}
                 </div>
-                <span className="text-[9px] font-mono text-white/20 tracking-widest transform -rotate-90 origin-center whitespace-nowrap mb-6">
+                <span className="text-[10px] font-mono text-white/70 tracking-widest transform -rotate-90 origin-center whitespace-nowrap mb-6">
                     itierx.com
                 </span>
             </div>
