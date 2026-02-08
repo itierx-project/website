@@ -26,3 +26,5 @@ Dockerfile
 .dockerignore
 nginx.conf
 .gitignore
+
+deploy.sh
