@@ -48,13 +48,14 @@ const WhoWeAre = ({ onServiceClick }) => {
             ]
         },
         {
-            title: "05. Innovación Real: Transformación con Retorno",
-            shortTitle: "Innovación Real",
-            category: "Innovación y Resultados",
-            description: "Transformación tecnológica enfocada en resultados.",
+            title: "05. Infraestructura: On-premise / Cloud Híbrida",
+            shortTitle: "Infraestructura",
+            category: "Gestión y Despliegue",
+            description: "Diseño y despliegue de infraestructuras soberanas y elásticas.",
             details: [
-                { label: "Foco en el Bottom-Line", content: "No innovamos por moda, sino para mejorar la eficiencia, reducir riesgos y abrir nuevas líneas de ingresos." },
-                { label: "Resultados Medibles", content: "Cada implementación cuenta con indicadores de éxito claros para asegurar que la tecnología trabaje para el negocio y no al revés." }
+                { label: "Soberanía de Datos", content: "Implementamos infraestructuras On-premise para el control total de la información sensible, garantizando la privacidad exigida por sectores críticos." },
+                { label: "Nube Híbrida y Elástica", content: "Combinamos la seguridad de lo propio con la escalabilidad de la nube, permitiendo una gestión de recursos eficiente y adaptativa al crecimiento del negocio." },
+                { label: "Continuidad Operativa", content: "Diseñamos arquitecturas con redundancia y alta disponibilidad para asegurar que el negocio nunca se detenga." }
             ]
         },
     ];
