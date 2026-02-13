@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const logos = [
     "HARVARD UNIVERSITY",
     "Match Group",
-    "MOTOMEA",
+    "Bankgroup",
     "Owl Ventures",
     "Pacific",
     "SIEMENS",
