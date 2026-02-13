@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+Dockerfile
+.dockerignore
+nginx.conf
+.gitignore
+
+deploy.sh
