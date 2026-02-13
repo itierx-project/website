@@ -49,7 +49,7 @@ const WhoWeAre = ({ onServiceClick }) => {
         },
         {
             title: "05. Infraestructura: On-premise / Cloud Híbrida",
-            shortTitle: "Infraestructura",
+            shortTitle: "Infraestructura On-premise / Cloud",
             category: "Gestión y Despliegue",
             description: "Diseño y despliegue de infraestructuras soberanas y elásticas.",
             details: [
