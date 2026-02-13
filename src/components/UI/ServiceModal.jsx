@@ -69,7 +69,7 @@ const ServiceModal = ({ isOpen, service, onClose, onInterestClick }) => {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-3 font-mono text-xs text-purple-vibrant hover:text-white transition-all uppercase tracking-widest group"
                                 >
-                                    Más información: <span className="underline underline-offset-8">{service.link.label}</span>
+                                    <span className="underline underline-offset-8">{service.link.label}</span>
                                     <ExternalLink size={16} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                                 </a>
                             </div>
