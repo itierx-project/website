@@ -5,7 +5,7 @@ const logos = [
     "HARVARD UNIVERSITY",
     "Match Group",
     "Bankgroup",
-    "Owl Ventures",
+    "SONY",
     "Pacific",
     "SIEMENS",
     "DELOITTE",
