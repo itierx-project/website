@@ -2,14 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const logos = [
-    "HARVARD UNIVERSITY",
-    "Match Group",
-    "Bankgroup",
-    "SONY",
-    "Pacific",
-    "SIEMENS",
-    "DELOITTE",
-    "ACCENTURE"
+    "TESLABATTERIES",
+    "HMC",
+    "PROKAMBIUM",
+    "AGROGIGANTE"
 ];
 
 const LogoCarousel = () => {
