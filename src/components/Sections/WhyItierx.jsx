@@ -30,15 +30,13 @@ const WhyItierx = () => {
                     className="relative w-full aspect-video md:aspect-[21/9] bg-white/5 rounded-2xl border border-purple-vibrant/40 overflow-hidden group shadow-[0_0_80px_rgba(123,97,255,0.15)]"
                 >
                     <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent z-10" />
-                    <video
-                        autoPlay
-                        muted
-                        loop
-                        playsInline
-                        className="w-full h-full object-cover opacity-50 transition-transform duration-700 group-hover:scale-105"
-                    >
-                        <source src="https://player.vimeo.com/external/517627402.sd.mp4?s=d4520e50160b76927976e104f4476a6b579737e4&profile_id=164&oauth2_token_id=57447761" type="video/mp4" />
-                    </video>
+                    <iframe
+                        src="https://player.vimeo.com/video/1171573189?badge=0&autopause=0&player_id=0&app_id=58479"
+                        frameBorder="0"
+                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                        className="absolute top-0 left-0 w-full h-full opacity-80 transition-transform duration-700 group-hover:scale-105"
+                        title="ITIERX"
+                    ></iframe>
 
                     <div className="absolute inset-0 z-20 flex items-center justify-center">
                         <motion.div

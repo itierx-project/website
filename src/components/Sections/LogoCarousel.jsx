@@ -5,6 +5,7 @@ const logos = [
     "TESLABATTERIES",
     "HMC",
     "PROKAMBIUM",
+    "INGRESA.CL",
     "AGROGIGANTE"
 ];
 

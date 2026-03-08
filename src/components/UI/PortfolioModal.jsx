@@ -4,9 +4,10 @@ import { X, ChevronLeft, ChevronRight, Play } from 'lucide-react';
 
 const projects = [
     {
-        title: "Neuro-Infraestructura 2026",
+        title: "Lean makers",
         thumbnail: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop",
-        id: "project1"
+        id: "project1",
+        vimeoId: "1171578568"
     },
     {
         title: "Ciberseguridad Cuántica",
@@ -22,9 +23,21 @@ const projects = [
 
 const PortfolioModal = ({ isOpen, onClose }) => {
     const [index, setIndex] = useState(0);
+    const [isPlaying, setIsPlaying] = useState(false);
 
-    const next = () => setIndex((prev) => (prev + 1) % projects.length);
-    const prev = () => setIndex((prev) => (prev - 1 + projects.length) % projects.length);
+    const next = () => {
+        setIndex((prev) => (prev + 1) % projects.length);
+        setIsPlaying(false);
+    };
+    const prev = () => {
+        setIndex((prev) => (prev - 1 + projects.length) % projects.length);
+        setIsPlaying(false);
+    };
+
+    const handleClose = () => {
+        setIsPlaying(false);
+        onClose();
+    };
 
     return (
         <AnimatePresence>
@@ -34,7 +47,7 @@ const PortfolioModal = ({ isOpen, onClose }) => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        onClick={onClose}
+                        onClick={handleClose}
                         className="absolute inset-0 bg-black/90 backdrop-blur-xl"
                     />
 
@@ -51,7 +64,7 @@ const PortfolioModal = ({ isOpen, onClose }) => {
                                 <p className="font-mono text-[10px] text-white/40 tracking-widest uppercase">Casos de éxito y despliegues globales.</p>
                             </div>
                             <button
-                                onClick={onClose}
+                                onClick={handleClose}
                                 className="text-white/40 hover:text-white transition-colors"
                             >
                                 <X size={24} />
@@ -70,19 +83,34 @@ const PortfolioModal = ({ isOpen, onClose }) => {
                                     className="absolute inset-0 flex flex-col md:flex-row"
                                 >
                                     <div className="flex-1 relative overflow-hidden group/item">
-                                        <img
-                                            src={projects[index].thumbnail}
-                                            alt={projects[index].title}
-                                            className="w-full h-full object-cover transition-transform duration-700 group-hover/item:scale-105"
-                                        />
-                                        <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-                                            <motion.div
-                                                whileHover={{ scale: 1.1 }}
-                                                className="w-16 h-16 rounded-full bg-purple-vibrant/20 border border-purple-vibrant flex items-center justify-center cursor-pointer backdrop-blur-sm shadow-[0_0_30px_rgba(123,97,255,0.4)]"
-                                            >
-                                                <Play className="fill-white text-white ml-1" size={24} />
-                                            </motion.div>
-                                        </div>
+                                        {isPlaying && projects[index].vimeoId ? (
+                                            <iframe
+                                                src={`https://player.vimeo.com/video/${projects[index].vimeoId}?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1`}
+                                                frameBorder="0"
+                                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                                                className="absolute inset-0 w-full h-full"
+                                                title={projects[index].title}
+                                            ></iframe>
+                                        ) : (
+                                            <>
+                                                <img
+                                                    src={projects[index].thumbnail}
+                                                    alt={projects[index].title}
+                                                    className="w-full h-full object-cover transition-transform duration-700 group-hover/item:scale-105"
+                                                />
+                                                <div 
+                                                    className="absolute inset-0 bg-black/40 flex items-center justify-center cursor-pointer group"
+                                                    onClick={() => setIsPlaying(true)}
+                                                >
+                                                    <motion.div
+                                                        whileHover={{ scale: 1.1 }}
+                                                        className="w-16 h-16 rounded-full bg-purple-vibrant/20 border border-purple-vibrant flex items-center justify-center backdrop-blur-sm shadow-[0_0_30px_rgba(123,97,255,0.4)]"
+                                                    >
+                                                        <Play className="fill-white text-white ml-1" size={24} />
+                                                    </motion.div>
+                                                </div>
+                                            </>
+                                        )}
                                     </div>
 
                                     <div className="w-full md:w-80 p-8 flex flex-col justify-center">
@@ -91,7 +119,10 @@ const PortfolioModal = ({ isOpen, onClose }) => {
                                         <p className="font-mono text-sm text-white/40 leading-relaxed mb-8">
                                             Implementación de sistemas avanzados de alta disponibilidad para infraestructuras críticas.
                                         </p>
-                                        <button className="text-xs font-mono tracking-widest uppercase border border-white/10 px-6 py-3 rounded-full hover:bg-white hover:text-black transition-all self-start">
+                                        <button 
+                                            onClick={() => setIsPlaying(true)}
+                                            className="text-xs font-mono tracking-widest uppercase border border-white/10 px-6 py-3 rounded-full hover:bg-white hover:text-black transition-all self-start"
+                                        >
                                             Ver Video
                                         </button>
                                     </div>
