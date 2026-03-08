@@ -46,19 +46,23 @@ const WhyItierx = () => {
                     </video>
 
                     {/* Play Button Overlay */}
-                    <div className="absolute inset-0 z-20 flex items-center justify-center">
+                    <div className="absolute inset-0 z-30 flex items-center justify-center">
                         <motion.div
                             whileHover={{ scale: 1.1 }}
-                            onClick={() => setIsModalOpen(true)}
-                            className="w-24 h-24 rounded-full bg-purple-vibrant/20 border border-purple-vibrant flex items-center justify-center cursor-pointer backdrop-blur-sm group/play transition-all hover:bg-purple-vibrant/40"
+                            whileTap={{ scale: 0.95 }}
+                            onClick={(e) => {
+                                e.stopPropagation();
+                                setIsModalOpen(true);
+                            }}
+                            className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-purple-vibrant/20 border border-purple-vibrant flex items-center justify-center cursor-pointer backdrop-blur-sm group/play transition-all hover:bg-purple-vibrant/40 z-40"
                         >
-                            <Play className="text-white fill-white ml-1 transition-transform group-hover/play:scale-110" size={32} />
+                            <Play className="text-white fill-white ml-1 transition-transform group-hover/play:scale-110" size={28} />
                         </motion.div>
                     </div>
 
-                    <div className="absolute bottom-12 left-12 z-20">
-                        <h3 className="text-2xl font-sans mb-2">Metodología de Impacto</h3>
-                        <p className="font-mono text-xs text-white/80 uppercase tracking-widest">
+                    <div className="absolute bottom-8 left-8 md:bottom-12 md:left-12 z-20 select-none pointer-events-none">
+                        <h3 className="text-lg md:text-2xl font-sans mb-1 md:mb-2">Metodología de Impacto</h3>
+                        <p className="font-mono text-[10px] md:text-xs text-white/80 uppercase tracking-widest">
                             Sistemas que deben funcionar.
                         </p>
                     </div>
