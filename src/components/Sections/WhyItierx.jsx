@@ -31,21 +31,12 @@ const WhyItierx = () => {
                 >
                     <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent z-10" />
                     <iframe
-                        src="https://player.vimeo.com/video/1171573189?badge=0&autopause=0&player_id=0&app_id=58479"
+                        src="https://player.vimeo.com/video/1171573189?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479"
                         frameBorder="0"
                         allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-                        className="absolute top-0 left-0 w-full h-full opacity-80 transition-transform duration-700 group-hover:scale-105"
+                        className="absolute top-0 left-0 w-full h-full opacity-90 transition-transform duration-700 group-hover:scale-105"
                         title="ITIERX"
                     ></iframe>
-
-                    <div className="absolute inset-0 z-20 flex items-center justify-center">
-                        <motion.div
-                            whileHover={{ scale: 1.1 }}
-                            className="w-24 h-24 rounded-full bg-purple-vibrant/20 border border-purple-vibrant flex items-center justify-center cursor-pointer backdrop-blur-sm"
-                        >
-                            <div className="w-0 h-0 border-l-[15px] border-l-white border-y-[10px] border-y-transparent ml-2" />
-                        </motion.div>
-                    </div>
 
                     <div className="absolute bottom-12 left-12 z-20">
                         <h3 className="text-2xl font-sans mb-2">Metodología de Impacto</h3>
