@@ -21,6 +21,7 @@ const ServiceModal = ({ isOpen, service, onClose, onInterestClick }) => {
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 0.95, opacity: 0 }}
                 className="relative w-full max-w-4xl bg-black border border-white/10 rounded-tr-3xl rounded-bl-3xl overflow-hidden flex flex-col shadow-2xl max-h-[90vh]"
+                data-lenis-prevent
             >
                 {/* Header - Matching Portfolio Style */}
                 <div className="flex items-center justify-between p-8 border-b border-white/5">
@@ -41,10 +42,7 @@ const ServiceModal = ({ isOpen, service, onClose, onInterestClick }) => {
                 </div>
 
                 {/* Content Area - Scrollable */}
-                <div 
-                    className="flex-1 overflow-y-auto p-8 md:p-12 space-y-12 bg-zinc-900/20"
-                    data-lenis-prevent
-                >
+                <div className="flex-1 overflow-y-auto p-8 md:p-12 space-y-12 bg-zinc-900/20">
                     <div className="max-w-3xl">
                         <p className="font-mono text-lg text-white/80 leading-relaxed mb-12">
                             {service.description}
