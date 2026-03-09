@@ -118,7 +118,7 @@ const PortfolioModal = ({ isOpen, onClose }) => {
                                         <span className="font-mono text-[10px] text-purple-vibrant mb-2">0{index + 1} / 03</span>
                                         <h3 className="text-2xl font-sans font-light mb-4">{projects[index].title}</h3>
                                         <p className="font-mono text-sm text-white/40 leading-relaxed mb-8">
-                                            Implementación de sistemas avanzados de alta disponibilidad para infraestructuras críticas.
+                                            Plataforma digital para innovar, emprender y prototipar soluciones reales.
                                         </p>
                                         <button 
                                             onClick={() => setIsPlaying(true)}
