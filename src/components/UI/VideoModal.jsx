@@ -22,6 +22,7 @@ const VideoModal = ({ isOpen, onClose, vimeoId, title }) => {
                         animate={{ scale: 1, opacity: 1 }}
                         exit={{ scale: 0.9, opacity: 0 }}
                         className="relative w-full max-w-5xl aspect-video bg-black rounded-2xl overflow-hidden border border-white/10 shadow-2xl"
+                        data-lenis-prevent
                     >
                         {/* Close Button */}
                         <button

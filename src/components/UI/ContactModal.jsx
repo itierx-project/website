@@ -67,7 +67,8 @@ const ContactModal = ({ isOpen, onClose, category }) => {
                         initial={{ scale: 0.9, opacity: 0, y: 20 }}
                         animate={{ scale: 1, opacity: 1, y: 0 }}
                         exit={{ scale: 0.9, opacity: 0, y: 20 }}
-                        className="relative w-full max-w-lg bg-zinc-900/90 border border-white/10 p-8 md:p-12 rounded-tr-3xl rounded-bl-3xl shadow-2xl backdrop-blur-xl"
+                        className="relative w-full max-w-lg bg-zinc-900/90 border border-white/10 p-8 md:p-12 rounded-tr-3xl rounded-bl-3xl shadow-2xl backdrop-blur-xl max-h-[90vh] overflow-y-auto"
+                        data-lenis-prevent
                     >
                         <button
                             onClick={onClose}

@@ -25,7 +25,8 @@ const SocialModal = ({ isOpen, onClose }) => {
                         initial={{ scale: 0.9, opacity: 0, y: 20 }}
                         animate={{ scale: 1, opacity: 1, y: 0 }}
                         exit={{ scale: 0.9, opacity: 0, y: 20 }}
-                        className="relative w-full max-w-sm bg-white/5 border border-white/10 p-12 rounded-tr-3xl rounded-bl-3xl shadow-2xl backdrop-blur-xl text-center"
+                        className="relative w-full max-w-sm bg-white/5 border border-white/10 p-12 rounded-tr-3xl rounded-bl-3xl shadow-2xl backdrop-blur-xl text-center max-h-[90vh] overflow-y-auto"
+                        data-lenis-prevent
                     >
                         <button
                             onClick={onClose}

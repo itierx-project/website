@@ -56,6 +56,7 @@ const PortfolioModal = ({ isOpen, onClose }) => {
                         animate={{ scale: 1, opacity: 1 }}
                         exit={{ scale: 0.95, opacity: 0 }}
                         className="relative w-full max-w-5xl min-h-[80vh] md:aspect-[21/9] bg-black border border-white/10 rounded-tr-3xl rounded-bl-3xl overflow-y-auto md:overflow-hidden flex flex-col"
+                        data-lenis-prevent
                     >
                         {/* Header */}
                         <div className="flex items-center justify-between p-8 border-b border-white/5">

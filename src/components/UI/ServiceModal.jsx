@@ -41,7 +41,10 @@ const ServiceModal = ({ isOpen, service, onClose, onInterestClick }) => {
                 </div>
 
                 {/* Content Area - Scrollable */}
-                <div className="flex-1 overflow-y-auto p-8 md:p-12 space-y-12 bg-zinc-900/20">
+                <div 
+                    className="flex-1 overflow-y-auto p-8 md:p-12 space-y-12 bg-zinc-900/20"
+                    data-lenis-prevent
+                >
                     <div className="max-w-3xl">
                         <p className="font-mono text-lg text-white/80 leading-relaxed mb-12">
                             {service.description}
